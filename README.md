@@ -1,4 +1,5 @@
 # Automate PowerPlatform Apps
+Each index.html file serves as the main entry point for the respective Power Pages, embedding Power Apps components and integrating JavaScript for enhanced functionality.
 
 (base) satish.loyapally@LT-APLVKQDVW9KXM PowerPlatform % tree
 .
