@@ -1,0 +1,10 @@
+{
+  "name": "Invoices",
+  "fields": [
+    {"name": "InvoiceNumber", "type": "Text"},
+    {"name": "Amount", "type": "Currency"},
+    {"name": "InvoiceDate", "type": "Date"},
+    {"name": "SupplierName", "type": "Text"}
+  ]
+}
+

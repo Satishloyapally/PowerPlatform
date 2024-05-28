@@ -1,0 +1,44 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Extract Data from Invoices",
+    "properties": {
+      "actions": {
+        "Extract_invoice_data_using_AI_Builder": {
+          "type": "AI Builder",
+          "inputs": {
+            "modelId": "invoice_model_id",
+            "document": "@{triggerOutputs()?['body/contentBytes']}"
+          }
+        },
+        "Add_a_new_row_to_Dataverse": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_commondataserviceforapps",
+              "operationId": "AddNewRecord"
+            },
+            "parameters": {
+              "entityName": "Invoices",
+              "Item/InternalName": "extractedData.InvoiceNumber",
+              "Item/Amount": "extractedData.Amount"
+            }
+          },
+          "runAfter": {
+            "Extract_invoice_data_using_AI_Builder": ["Succeeded"]
+          }
+        }
+      },
+      "triggers": {
+        "When_a_new_invoice_is_uploaded": {
+          "type": "SharePoint",
+          "inputs": {
+            "siteAddress": "https://your-sharepoint-site",
+            "folderPath": "/Shared Documents/Invoices"
+          }
+        }
+      }
+    }
+  }
+}
+
