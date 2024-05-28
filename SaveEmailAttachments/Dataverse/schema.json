@@ -1,0 +1,10 @@
+{
+  "name": "EmailAttachments",
+  "fields": [
+    {"name": "EmailSubject", "type": "Text"},
+    {"name": "Sender", "type": "Text"},
+    {"name": "AttachmentName", "type": "Text"},
+    {"name": "FileURL", "type": "URL"}
+  ]
+}
+
