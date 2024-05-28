@@ -36,3 +36,8 @@ plt.savefig('document_approvals_status.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads document approval data from a CSV file.
+#Data Analysis: It examines the distribution of document approval times.
+#Visualization: A histogram shows the frequency of approval times.
