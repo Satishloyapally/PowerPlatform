@@ -58,3 +58,9 @@ Power BI:
 
 Use Case: Track project assignments.
 Explanation: Dashboards track project assignments, deadlines, and employee workload.
+
+Index.html Explanation:
+
+Purpose: Provide a web page for employees to check their project assignments.
+Components:
+Section to list project assignments.
