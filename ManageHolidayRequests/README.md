@@ -58,3 +58,10 @@ Power BI:
 
 Use Case: Track leave data.
 Explanation: Dashboards track leave requests, approval times, and leave balances.
+
+Index.html Explanation:
+
+Purpose: Provide a portal for submitting and tracking leave requests.
+Components:
+Form for submitting leave requests.
+Section to display leave request status.
