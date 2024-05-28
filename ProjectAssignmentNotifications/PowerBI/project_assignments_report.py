@@ -35,3 +35,8 @@ plt.savefig('project_assignments_per_employee.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads project assignment data from a CSV file.
+#Data Analysis: It counts the number of projects assigned to each employee.
+#Visualization: A bar chart displays the number of assignments per employee.
