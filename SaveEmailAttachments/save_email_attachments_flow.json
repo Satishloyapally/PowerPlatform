@@ -1,0 +1,37 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Save Email Attachments",
+    "properties": {
+      "actions": {
+        "Apply_to_each": {
+          "actions": {
+            "Create_file": {
+              "inputs": {
+                "Host": {
+                  "type": "SharePoint"
+                },
+                "Method": "Post",
+                "Path": "/sites/your-site/_api/web/GetFolderByServerRelativeUrl('/Shared Documents/Attachments')/Files/add",
+                "body": {
+                  "url": "@{triggerOutputs()?['body/attachments']}[0]"
+                }
+              }
+            }
+          },
+          "runAfter": {},
+          "type": "Foreach"
+        }
+      },
+      "triggers": {
+        "When_a_new_email_arrives": {
+          "type": "Trigger",
+          "inputs": {
+            "method": "get",
+            "path": "/mail"
+          }
+        }
+      }
+    }
+  }
+}
