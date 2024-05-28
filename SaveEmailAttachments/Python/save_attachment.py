@@ -13,3 +13,12 @@ def save_attachment_to_sharepoint(email):
     else:
         print("Error saving attachment: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Save email attachments to SharePoint.
+#Function: save_attachment_to_sharepoint(email)
+#Steps:
+#Define the SharePoint API endpoint to add files to a folder.
+#Set up headers with authorization and content type.
+#Send a POST request with the attachment data.
+#Check the response status to confirm the success or failure of the operation.
