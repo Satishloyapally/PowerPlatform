@@ -15,3 +15,13 @@ def send_approval_notification(document):
     else:
         print("Error sending notification: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Send document approval notifications to Microsoft Teams.
+#Function: send_approval_notification(document)
+#Steps:
+#Define the Microsoft Teams API endpoint for sending messages.
+#Set up headers with authorization and content type.
+#Prepare the notification message data.
+#Send a POST request with the notification data.
+#Check the response status to confirm the success or failure of the operation.
