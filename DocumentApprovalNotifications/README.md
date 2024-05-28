@@ -53,6 +53,12 @@ Use Case: Enhance notifications.
 Explanation: A script sends Teams notifications when a document is approved.
 Python:
 
+Explanation:
+
+Data Loading: The script reads document approval data from a CSV file.
+Data Analysis: It examines the distribution of document approval times.
+Visualization: A histogram shows the frequency of approval times.
+
 Use Case: Send approval notifications.
 Explanation: A Python script sends notifications to Teams about document approval status.
 Power BI:
