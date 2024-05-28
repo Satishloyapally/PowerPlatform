@@ -1,0 +1,56 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Automate Onboarding Process",
+    "properties": {
+      "actions": {
+        "Send_Onboarding_Materials": {
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_office365",
+              "operationId": "SendEmailV2"
+            },
+            "parameters": {
+              "To": "@{triggerOutputs()?['body/email']}",
+              "Subject": "Welcome to the Team!",
+              "Body": "Hello @{triggerOutputs()?['body/name']}, welcome to the team! Here are your onboarding materials."
+            }
+          },
+          "runAfter": {},
+          "type": "OpenApiConnection"
+        },
+        "Create_event": {
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_outlook",
+              "operationId": "CreateEventV2"
+            },
+            "parameters": {
+              "Subject": "Onboarding Meeting",
+              "StartTime": "@{triggerOutputs()?['body/startTime']}",
+              "EndTime": "@{triggerOutputs()?['body/endTime']}",
+              "Attendees": "@{triggerOutputs()?['body/email']}"
+            }
+          },
+          "runAfter": {
+            "Send_Onboarding_Materials": ["Succeeded"]
+          },
+          "type": "OpenApiConnection"
+        }
+      },
+      "triggers": {
+        "When_a_new_employee_is_added": {
+          "type": "HttpWebhook",
+          "inputs": {
+            "url": "https://your-webhook-url",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
