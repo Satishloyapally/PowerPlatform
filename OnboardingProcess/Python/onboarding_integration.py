@@ -35,3 +35,20 @@ def schedule_onboarding_meeting(employee):
     else:
         print("Error scheduling onboarding meeting: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Send onboarding materials and schedule meetings.
+#Functions: send_onboarding_materials(employee) and schedule_onboarding_meeting(employee)
+#Steps:
+#Send Onboarding Materials:
+#Define the email service API endpoint for sending onboarding materials.
+#Set up headers with authorization and content type.
+#Prepare the onboarding email data.
+#Send a POST request with the onboarding email data.
+#Check the response status to confirm the success or failure of the operation.
+#Schedule Onboarding Meeting:
+#Define the Outlook API endpoint for scheduling events.
+#Set up headers with authorization and content type.
+#Prepare the meeting data.
+#Send a POST request with the meeting data.
+#Check the response status to confirm the success or failure of the operation.
