@@ -38,3 +38,8 @@ plt.savefig('attachments_per_day.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads email attachment data from a CSV file.
+#Data Analysis: It counts the number of attachments sent by each sender.
+#Visualization: A bar chart displays the frequency of attachments per sender.
