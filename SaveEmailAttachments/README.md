@@ -58,3 +58,10 @@ Power BI:
 
 Use Case: Analyze email attachment data.
 Explanation: Power BI dashboards provide insights into the frequency and volume of saved attachments.
+
+Index.html Explanation:
+
+Purpose: Provide a web interface to access and download saved email attachments.
+Components:
+Search input and button to filter attachments.
+A placeholder for Power Apps component to display attachments.
