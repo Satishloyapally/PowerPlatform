@@ -30,3 +30,32 @@ This project automates document approval notifications using Microsoft Power Pla
 - **Python**: Contains Python scripts for integration.
 - **PowerBI**: Contains Python scripts to generate Power BI reports.
 
+Document Approval Notifications
+Power Automate Flow:
+
+Use Case: Automate document approval process.
+Explanation: This flow triggers on document upload, requests approval, and notifies via Teams.
+Dataverse Schema:
+
+Use Case: Track document statuses.
+Explanation: The schema includes fields for document name, status, approval date, and approved by.
+Power Apps:
+
+Use Case: Submit and track documents.
+Explanation: Power Apps provides an interface for submitting and tracking document approvals.
+Power Pages:
+
+Use Case: Web interface for document management.
+Explanation: A web page allows users to manage document approvals.
+JavaScript:
+
+Use Case: Enhance notifications.
+Explanation: A script sends Teams notifications when a document is approved.
+Python:
+
+Use Case: Send approval notifications.
+Explanation: A Python script sends notifications to Teams about document approval status.
+Power BI:
+
+Use Case: Analyze document approval workflows.
+Explanation: Dashboards visualize document approval workflows and identify bottlenecks.
