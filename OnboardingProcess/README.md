@@ -58,3 +58,10 @@ Power BI:
 
 Use Case: Track onboarding progress.
 Explanation: Dashboards track new hires’ completion of tasks, training progress, and integration into the company.
+
+index.html Explanation:
+
+Purpose: Provide a portal for new employees to access onboarding resources and track their progress.
+Components:
+Section for providing onboarding materials.
+Section for tracking onboarding progress.
