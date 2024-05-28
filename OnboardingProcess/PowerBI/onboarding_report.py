@@ -35,3 +35,8 @@ plt.savefig('onboarding_status.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads onboarding data from a CSV file.
+#Data Analysis: It counts the number of employees in each onboarding status category.
+#Visualization: A bar chart displays the number of employees by their onboarding status.
