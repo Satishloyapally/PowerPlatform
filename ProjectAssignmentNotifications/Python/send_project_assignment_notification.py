@@ -17,3 +17,13 @@ def send_project_assignment_notification(employee, project):
     else:
         print("Error sending notification: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Send project assignment notifications via email.
+#Function: send_project_assignment_notification(employee, project)
+#Steps:
+#Define the email service API endpoint for sending emails.
+#Set up headers with authorization and content type.
+#Prepare the email notification data.
+#Send a POST request with the email data.
+#Check the response status to confirm the success or failure of the operation.
