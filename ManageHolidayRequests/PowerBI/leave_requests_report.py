@@ -36,3 +36,8 @@ plt.savefig('leave_requests_status.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads holiday request data from a CSV file.
+#Data Analysis: It counts leave requests by their status (e.g., approved, pending).
+#Visualization: A bar chart displays the number of requests by status.
