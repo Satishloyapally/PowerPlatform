@@ -36,3 +36,8 @@ plt.savefig('total_amount_per_supplier.png')
 # Show plot (for local testing)
 plt.show()
 
+#Explanation:
+
+#Data Loading: The script reads invoice data from a CSV file.
+#Data Analysis: It calculates the total invoice amount for each supplier.
+#Visualization: A bar chart shows the total amount billed by each supplier.
