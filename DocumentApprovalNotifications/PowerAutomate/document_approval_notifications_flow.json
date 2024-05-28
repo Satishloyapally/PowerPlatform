@@ -1,0 +1,41 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Document Approval Notifications",
+    "properties": {
+      "actions": {
+        "Start_and_wait_for_an_approval": {
+          "type": "Approval",
+          "inputs": {
+            "approvalType": "ApproveReject",
+            "details": "Document approval request",
+            "title": "Document Approval"
+          }
+        },
+        "Post_a_message_in_a_chat_or_channel": {
+          "type": "Teams",
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_teams",
+              "operationId": "PostMessageInChatOrChannel"
+            },
+            "parameters": {
+              "teamId": "YourTeamID",
+              "channelId": "YourChannelID",
+              "message": "Document has been approved."
+            }
+          }
+        }
+      },
+      "triggers": {
+        "When_a_file_is_created": {
+          "type": "SharePoint",
+          "inputs": {
+            "path": "/sites/your-site/Shared Documents"
+          }
+        }
+      }
+    }
+  }
+}
+

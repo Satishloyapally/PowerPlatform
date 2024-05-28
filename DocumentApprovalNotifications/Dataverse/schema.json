@@ -1,0 +1,10 @@
+{
+  "name": "DocumentApprovals",
+  "fields": [
+    {"name": "DocumentName", "type": "Text"},
+    {"name": "ApprovalStatus", "type": "Text"},
+    {"name": "ApprovalDate", "type": "Date"},
+    {"name": "Approver", "type": "Text"}
+  ]
+}
+
