@@ -60,3 +60,11 @@ Power BI:
 Use Case: Analyze invoice data.
 Explanation: Dashboards analyze invoice data, monitor processing times, and identify trends.
 
+
+Index.html Explanation:
+
+Purpose: Provide a web interface for uploading and managing invoice data.
+Components:
+Form for uploading invoices.
+Section to display extracted invoice data.
+
