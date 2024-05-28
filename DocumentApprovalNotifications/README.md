@@ -54,3 +54,9 @@ Explanation: A script sends Teams notifications when a document is approved.
 Python:
 
 
+Index.HTML Explanation:
+
+Purpose: Provide a web interface for document management and approval tracking.
+Components:
+Form for submitting documents.
+Section to display approval status.
