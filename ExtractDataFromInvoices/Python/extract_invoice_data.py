@@ -28,3 +28,19 @@ def store_invoice_data(data):
     else:
         print("Error storing invoice data: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Extract and store invoice data using AI Builder and Dataverse.
+#Functions: extract_data_from_invoice(invoice) and store_invoice_data(data)
+#Steps:
+#Extract Data:
+#Define the AI Builder API endpoint for extracting data from invoices.
+#Set up headers with authorization and content type.
+#Prepare the invoice data.
+#Send a POST request with the invoice data.
+#Check the response status and extract the data.
+#Store Data:
+#Define the Dataverse API endpoint for storing invoice data.
+#Set up headers with authorization and content type.
+#Send a POST request with the extracted invoice data.
+#Check the response status to confirm the success or failure of the operation.
