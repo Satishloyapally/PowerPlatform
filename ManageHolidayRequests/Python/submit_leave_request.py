@@ -18,3 +18,13 @@ def submit_leave_request(employee, start_date, end_date):
     else:
         print("Error submitting leave request: ", response.status_code)
 
+#Explanation:
+
+#Purpose: Submit leave requests to Dataverse.
+#Function: submit_leave_request(employee, start_date, end_date)
+#Steps:
+#Define the Dataverse API endpoint for adding new leave requests.
+#Set up headers with authorization and content type.
+#Prepare the leave request data.
+#Send a POST request with the leave request data.
+#Check the response status to confirm the success or failure of the operation.
