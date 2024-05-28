@@ -1,0 +1,27 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Manage Holiday Requests",
+    "properties": {
+      "actions": {
+        "Start_and_wait_for_an_approval": {
+          "type": "Approval",
+          "inputs": {
+            "approvalType": "ApproveReject",
+            "details": "Leave request details",
+            "title": "Leave Request Approval"
+          }
+        }
+      },
+      "triggers": {
+        "When_a_response_is_submitted": {
+          "type": "Forms",
+          "inputs": {
+            "formId": "leave_request_form"
+          }
+        }
+      }
+    }
+  }
+}
+

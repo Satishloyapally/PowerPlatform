@@ -1,0 +1,10 @@
+{
+  "name": "LeaveRequests",
+  "fields": [
+    {"name": "Employee", "type": "Text"},
+    {"name": "StartDate", "type": "Date"},
+    {"name": "EndDate", "type": "Date"},
+    {"name": "Status", "type": "Text"}
+  ]
+}
+
