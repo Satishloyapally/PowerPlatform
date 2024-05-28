@@ -1,0 +1,10 @@
+{
+  "name": "ProjectAssignments",
+  "fields": [
+    {"name": "EmployeeName", "type": "Text"},
+    {"name": "EmployeeEmail", "type": "Text"},
+    {"name": "ProjectName", "type": "Text"},
+    {"name": "AssignmentDate", "type": "Date"}
+  ]
+}
+

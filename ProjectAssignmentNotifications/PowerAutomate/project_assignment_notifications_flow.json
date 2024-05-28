@@ -1,0 +1,40 @@
+{
+  "definition": {
+    "type": "Flow",
+    "name": "Project Assignment Notifications",
+    "properties": {
+      "actions": {
+        "Send_an_email": {
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_office365",
+              "operationId": "SendEmailV2"
+            },
+            "parameters": {
+              "To": "@{items('Apply_to_each')['EmployeeEmail']}",
+              "Subject": "New Project Assignment",
+              "Body": "You have been assigned a new project: @{items('Apply_to_each')['ProjectName']}"
+            }
+          },
+          "runAfter": {},
+          "type": "OpenApiConnection"
+        }
+      },
+      "triggers": {
+        "When_a_task_is_assigned": {
+          "inputs": {
+            "host": {
+              "connectionReferenceName": "shared_planner",
+              "operationId": "GetTasksByBucketId"
+            },
+            "parameters": {
+              "bucketId": "project_bucket_id"
+            }
+          },
+          "type": "OpenApiConnection"
+        }
+      }
+    }
+  }
+}
+
